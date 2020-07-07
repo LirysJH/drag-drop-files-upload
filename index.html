@@ -8,6 +8,25 @@
     <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>    
 </head>
 <body>
+
+    <div class="container">
+        <form class="drag-drop-form">
+            <p>
+                Drap & drop files here to upload
+            </p>
+            <input type="file"
+                    class="files"
+                    multiple
+                    accept=".jpg, .jpeg, .png, .gif, .pdf"
+                    onchange="uploadFiles(this.files)" />
+            <div>
+                <button>
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    
     
     <script src='/js/main.js'></script>
 </body>
