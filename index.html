@@ -9,25 +9,33 @@
 </head>
 <body>
 
-    <div class="container">
-        <form class="drag-drop-form">
-            <p>
-                Drap & drop files here to upload
-            </p>
-            <input type="file"
-                    class="files"
-                    multiple
-                    accept=".jpg, .jpeg, .png, .gif, .pdf"
-                    onchange="uploadFiles(this.files)" />
-            <div>
-                <button>
-                    Submit
-                </button>
-            </div>
-        </form>
+    <div class="wrapper">
+        <div class="container">
+            <form class="drag-drop-form">
+                <div class="box">
+                    <p>
+                        Drap & drop files here to upload
+                    </p>
+                </div>
+                <input type="file"
+                        class="files"
+                        multiple
+                        accept=".jpg, .jpeg, .png, .gif, .pdf"
+                        onchange="getFiles(this.files)" />
+                <div class="box">
+                    <progress class="progress-bar" max=100 value=0></progress>
+                </div>
+                <!-- <div class="box">
+                    <button class="submit">
+                        Submit
+                    </button>
+                </div> -->
+            </form>
+        </div>
+        <hr />
+        <div class="thumbnails"></div>
     </div>
-    
-    
+
     <script src='/js/main.js'></script>
 </body>
 </html>
